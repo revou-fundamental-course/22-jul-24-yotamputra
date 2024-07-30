@@ -1,14 +1,24 @@
 nav {
-    border: 1px solid;
     display: flex;
     justify-content: space-between;
     padding: 12px;
     align-items: center;
 }
 
+.kepala {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
 .logo-icon {
     height: 70px;
+    width: 90px;
     margin-left: 10px;
+}
+
+.icon-name {
+    padding-top: 25px;
 }
 
 .nav-container {
@@ -16,9 +26,14 @@ nav {
 }
 
 .nav-items {
-    border: 1px solid;
     padding: 8px;
+    transition: 1s;
 }
+
+.nav-items:hover {
+    transform: scale(1.25)
+}
+
 
 .main-title {
     text-align: center;
@@ -29,7 +44,7 @@ nav {
 }
 
 .main-content-item {
-    border: 1px solid;
+    
     width: 100%;
     height: 250px;
     display: flex;
@@ -37,17 +52,19 @@ nav {
     align-items: center;
 }
 
+.welcome {
+    padding-left: 20px;
+}
+
 .main-content-banner {
-    height: 150px;
-    border: 1px solid;
+    height: 250px;
     width: 100%;
     background-image: url(https://picsum.photos/150);
 }
 
 .item-icon {
-    height: 25px;
-    width: 25px;
-    border: 1px solid;
+    height: 45px;
+    width: 45px;
     background-image: url(https://picsum.photos/25);
     border-radius: 50%;
 }
@@ -74,4 +91,95 @@ button {
     height: 32px;
     background-color: aliceblue;
     border: none;
+}
+
+.package-title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: lightseagreen;
+    color:white;
+    height: 300px;
+    width: 100%;
+    text-align:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.package-list{ 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: auto;
+    height: 500px;
+    width: 100%;
+}
+
+.row-container-1{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    height: 250px;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row-container-2{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    heigt: 250px;
+    width:100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.package-icon{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    background-color: rgb(197, 195, 195);
+    border-radius: 50%;
+}
+
+.package-icon img{
+    height: 20px;
+    width:20px;
+
+}
+
+.package-item{
+    display:flex;
+    border: 1px solid;
+    flex-direction: row;
+    justify-content: center;
+    width: 200px;
+    font-size: 12px;
+    height: 100px;
+
+}
+
+.item-title{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border: 1px solid;
+    height: 30px;
+    padding: 20px;
+}
+
+.package-container {
+    padding-top: 50px;
 }
