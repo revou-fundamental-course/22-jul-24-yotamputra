@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revou</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Oswald:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,9 +19,9 @@
         </header>
 
         <section class="nav-container">
-            <div class="nav-items"><a href="#">Home</a></div>
-            <div class="nav-items"><a href="#">Our Package</a></div>
-            <div class="nav-items"><a href="#">Contact</a></div>
+            <div class="nav-items"><a href="#welcome">Home</a></div>
+            <div class="nav-items"><a href="#our-package">Our Package</a></div>
+            <div class="nav-items"><a href="#footer">Contact</a></div>
         </section>
     </nav>
 
@@ -27,63 +30,109 @@
         <h2>Welcome to PergaPergi.</h2>
     </div></br>
 
-    <main>
+    <main id="welcome">
         <article class="main-title">
             <header>
-                <h1>Your Trusted Travel Agent's</h1>
+                <h1>PergaPergi, Your Ultimate Travel Partner</h1>
             </header>
 
-            <p>Your happiness is our happiness</p>
+            <p>Discover the World with PergaPergi.</p>
         </article>
 
         <section class="main-content">
             <article class="main-content-item">
-                <div class="main-content-banner"></div>
+                <div class="main-content-banner">
+                    <div class="banner-slides">
+                        <img src="assets/Bali.jpg" alt="Slide 1">
+                        <img src="assets/Japan.jpg" alt="Slide 2">
+                        <img src="assets/Singapore.jpg" alt="Slide 3">
+                        <img src="assets/Bandung.jpg" alt="Slide 4">
+                        <img src="assets/Surabaya.jpg" alt="Slide 5">
+                        <img src="assets/Australia.jpg" alt="Slide 6">
+                    </div>
+                </div>
 
-                <p>"Liburan jadi menyenangkan bersama Travel Agentku."</p>
+                <p class="tulisan">Turning Every Trip into a New Adventure</p>
 
                 <div class="main-item">
                     <div class="item-icon"></div>
 
-                    <div>
-                        <h3>Lorem ipsum dolor</h3>
-                        <p>Lorem ipsum dolor</p>
+                    <div class="profile">
+                        <h3 class="nama-profile">Yotam Putra</h3>
+                        <p class="ket-profile">Student, 18</p>
                     </div>
                 </div>
-            </article>
+            </article></br>
 
-            <form class="main-content-item">
-                <input type="text" />
-                <button type="button">Submit</button>
-            </form>
+            <aside>
+                <h2>Get in Touch with Us</h2>
+                <p>Our sales experts will be in touch within 24 hours after we receive your details. We look forward to assisting you!</p>
+
+                <form class="main-content-item">
+                    <div class="data">
+                        <h4>Your Name:</h4>
+                        <input type="text" id="names"/>
+
+                        <h4>Email Address:</h4>
+                        <input type="text" id="email"/>
+
+                        <h4>What are you interested in?</h4>
+                        <select name="interest" id="interest">
+                            <option value="bali">Bali</option>
+                            <option value="japan">Japan</option>
+                            <option value="singapore">Singapore</option>
+                            <option value="bandung">Bandung</option>
+                            <option value="surabaya">Surabaya</option>
+                            <option value="australia">Australia</option>
+                        </select>
+                    </data>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </aside>
         </section>
     </main>
 
+    <div class="feature">
+        <h2>Why Choose Our Travel Solutions ?</h2>
+
+        <ol type="1">
+            <li>Tailored Itineraries</li>
+            <p>Enjoy customized travel plans crafted just for you, with every detail taken care of to ensure a stress-free experience.</p>
+            
+            <li>Exclusive Savings</li>
+            <p>Benefit from special deals and discounts not available elsewhere, giving you more value for your money.</p>
+
+            <li>24/7 Support</li>
+            <p>Travel with peace of mind knowing our team is available around the clock to assist with any issues or changes.</p>
+        </ol>
+    </div>
+
     <div class="package-container">
-        <div class="package-title"><h1>Our Package</h1></div>
+        <div id="our-package" class="package-title"><h1>Our Package</h1></div>
         <div class="package-list">
             <div class="row-container-1">
                 <div class="package-item">
-                    <div class="package-icon"><img src="img/idea-svgrepo-com.svg"></div>
+                    <div class="package-icon"><img src="assets/landmark.png"></div>
                     <div><h3 class="item-title"> Bali </h3>
                         <div class="item-content">
-                            <p> Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik </p>
+                            <p> Experience Bali's charm. Discover its vibrant culture and savor its delicious cuisine. </p>
                         </div> 
                     </div>
                 </div>
                 <div class="package-item">
-                    <div class="package-icon"><img src="img/idea-svgrepo-com.svg"></div>
+                    <div class="package-icon"><img src="assets/landmark.png"></div>
                     <div><h3 class="item-title"> Japan </h3>
                         <div class="item-content">
-                            <p> Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik </p>
+                            <p> Dive into Japan's enchantment. Uncover its deep traditions and savor its exquisite cuisine. </p>
                         </div> 
                     </div>
                 </div>
                 <div class="package-item">
-                    <div class="package-icon"><img src="img/idea-svgrepo-com.svg"></div>
-                    <div><h3 class="item-title"> Australia </h3>
+                    <div class="package-icon"><img src="assets/landmark.png"></div>
+                    <div><h3 class="item-title"> Singapore </h3>
                         <div class="item-content">
-                            <p> Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik </p>
+                            <p> Experience Singapore's charm. Discover its futuristic skyline and lush green spaces. </p>
                         </div> 
                     </div>
                 </div>
@@ -91,26 +140,26 @@
             
             <div class="row-container-2">
                 <div class="package-item">
-                    <div class="package-icon"><img src="img/idea-svgrepo-com.svg"></div>
-                    <div><h3 class="item-title"> Bali </h3>
+                    <div class="package-icon"><img src="assets/landmark.png"></div>
+                    <div><h3 class="item-title"> Bandung </h3>
                         <div class="item-content">
-                            <p> Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik </p>
+                            <p> Explore the beauty of Bandung. Enjoy its cool climate, stunning landscapes, and vibrant cultural scene. </p>
                         </div> 
                     </div>
                 </div>
                 <div class="package-item">
-                    <div class="package-icon"><img src="img/idea-svgrepo-com.svg"></div>
-                    <div><h3 class="item-title"> Japan </h3>
+                    <div class="package-icon"><img src="assets/landmark.png"></div>
+                    <div><h3 class="item-title"> Surabaya </h3>
                         <div class="item-content">
-                            <p> Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik </p>
+                            <p> Discover the dynamic spirit of Surabaya. Explore its historical landmarks and lively urban atmosphere. </p>
                         </div> 
                     </div>
                 </div>
                 <div class="package-item">
-                    <div class="package-icon"><img src="img/idea-svgrepo-com.svg"></div>
+                    <div class="package-icon"><img src="assets/landmark.png"></div>
                     <div><h3 class="item-title"> Australia </h3>
                         <div class="item-content">
-                            <p> Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik </p>
+                            <p> Experience Australia’s wonders. Discover its stunning landscapes and vibrant wildlife. </p>
                         </div> 
                     </div>
                 </div>
@@ -118,6 +167,13 @@
             
         </div>
     </div>
+
+    <footer id="footer">
+        <p>Email: <a href="mailto:info@travelagent.com">pergapergi@travelagent.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+62 234 567 890</a></p>
+        <p>&copy; 2024 Travel Agent. All rights reserved.</p>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 
